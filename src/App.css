@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+p {
+  margin: 0;
+  color: rgb(56, 56, 56);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.input {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 2px rgb(56, 56, 56) solid;
+  width: 120px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: dodgerblue;
+}
+
+.input + .input-label {
+  margin-top: 8px;
+}
+
+.input-label {
+  font-family: Arial;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input::placeholder {
+  font-family: Arial;
+  font-size: 8pt;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin-top: 16px;
+  height: 36px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: dodgerblue;
   color: white;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 10pt;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.window {
+  width: 100px;
+  border: solid 2px rgb(56, 56, 56);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.window-with-size {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+
+.window-section {
+  width: 100%;
+  border: solid 2px rgb(56, 56, 56);
+}
+
+.window .window-with-size p {
+  position: absolute;
+  right: 8px;
+}
+
+.window-top {
+  background: rgba(220, 190, 150, 0.4);
+}
+
+.window-middle {
+  background: rgba(40, 150, 130, 0.4);
+}
+
+.window-bottom {
+  background: rgba(100, 200, 220, 0.4);
+}
+
+.windows {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.new {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-label {
+  margin-top: 8px;
 }
